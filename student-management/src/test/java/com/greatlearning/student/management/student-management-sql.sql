@@ -1,0 +1,18 @@
+create database student_management;
+use student_management;
+select * from student;
+select * from users;
+select * from roles;
+select * from user_roles;
+INSERT INTO roles VALUES(1,"ADMIN"); 
+INSERT INTO roles VALUES(2," STUDENT");  
+INSERT INTO users VALUES(1,"$2a$12$G2y2lSXBgVixlA4/RYwFoezzbiM.w9MWkJs3tOOxb/XuHcwP/uSw.", "admin"); 
+INSERT INTO users VALUES(2,"$2a$12$G2y2lSXBgVixlA4/RYwFoezzbiM.w9MWkJs3tOOxb/XuHcwP/uSw.","student1");
+INSERT INTO users VALUES(3,"$2a$12$G2y2lSXBgVixlA4/RYwFoezzbiM.w9MWkJs3tOOxb/XuHcwP/uSw.","student2");
+INSERT INTO user_roles VALUES(1,1); 
+INSERT INTO user_roles VALUES(1,2);
+INSERT INTO user_roles VALUES(2,2); 
+INSERT INTO user_roles VALUES(3,2);
+select * from student;
+select * from users;
+select * from roles;
